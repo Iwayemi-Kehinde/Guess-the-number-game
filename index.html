@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the number game</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+
+<body>
+  <div class="overlay">
+    <div class="x">X</div>
+    A simple game where the user inputs a number, and the computer randomly selects a number. Then compares the two numbers and determines if the user wins or loses based on the match / or computer move
+  </div>
+  <div class="navbar">
+    <div class="logo">GUESS THE NUMBER (GAME)</div>
+    <a class="see" href="https://github.com/Iwayemi-Kehinde" target="_blank" style=" background: linear-gradient(to right, rgb(6, 128, 6), rgb(9, 184, 9));">SEE MORE</a>
+  </div>
+  <button style="color: white; margin-top: 20px;" class="how">HOW TO PLAY</button>
+ 
+  <div class="container">
+    <div class="input-field">
+      <input type="text" placeholder="Input a number (0 - 10)">
+      <button class="guess">Guess</button>
+    </div>
+    <span></span>
+    <p></p>
+    <p class="win"></p>
+    <p class="loose"></p>
+    <button class="play-again style">Try again</button>
+    <div class="content"></div>
+  </div>
+
+  <script src="./assets/app.js"></script>
+</body>
+
+</html>

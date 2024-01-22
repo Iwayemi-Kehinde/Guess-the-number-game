@@ -1,0 +1,160 @@
+*{
+  font-family: mm;
+  box-sizing: border-box;
+}
+.style {
+  display: none;
+}
+.Visible{
+  display: block;
+}
+.input-field{
+  width: 300px;
+  display: flex;
+  margin: 30px auto;
+}
+button{
+  color: white;
+  background: rgb(0, 119, 0);
+  border: none;
+  font-size: 16px;
+  padding: 4px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.input-field input{
+  font-size: 15px;
+  width: 100%;
+  padding: 7px;
+  border: 1px solid rgb(241, 241, 241);
+  box-shadow: 0px 0px 6px 1px rgba(0,0,0,.13);
+  border-left-radius: 20px;
+  outline: none;
+}
+.input-field button{
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 170px;
+}
+body{
+  height: 100vh;
+  background: #000;
+  padding: 20px;
+}
+.container{
+  margin: 70px auto;
+  padding: 10px 10px 20px 10px;
+  background: white;
+  width: 400px;
+  height: 400px;
+}
+.logo{
+  color: green;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+.overlay{
+  padding: 40px;
+  width: 0;
+  background: green;
+  color: rgb(207, 206, 206);
+  height: max-content;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(0);
+  transition: .8s ease-in-out;
+  z-index: 999;
+}
+.x{
+  color: white;
+  font-size: 30px;
+  margin: 10px 0 10px;
+  cursor: pointer;
+  width: 35px;
+}
+.show {
+  width: 400px;
+  transform: scale(1);
+  visibility: visible;
+  opacity: 1;
+}
+.how:active{
+  transform: scale(1.07);
+}
+.see {
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+  padding: 4px 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: white;
+}
+.see:active{
+  transform: scale(1.1);
+}
+
+@font-face {
+  font-family: mm;
+  src: url(./YsabeauInfant-VariableFont_wght.ttf);
+}
+
+@media (max-width: 460px) {
+  .overlay{
+    width: 100%;
+  }
+  .container{
+    width: 300px;
+    height: 330px;
+  }
+  .navbar{
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+  }
+  .navbar a{
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    padding: 4px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .overlay{
+    padding: 20px;
+  }
+  .input-field{
+    flex-direction: column;
+    width: 200px;
+    row-gap: 10px;
+  }
+  .input-field button{
+    width: 100px;
+    padding: 4px 5px;
+  }
+}
+
+
+
+@media (max-width: 460px) {
+  body{
+    padding: 10px;
+  }
+  .container{
+    width: 286px;
+    height: 340px;
+  }
+}
