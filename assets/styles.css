@@ -145,13 +145,8 @@ body{
     width: 100px;
     padding: 4px 5px;
   }
-}
-
-
-
-@media (max-width: 460px) {
   body{
-    padding: 10px;
+    padding 10px;
   }
   .container{
     width: 286px;
