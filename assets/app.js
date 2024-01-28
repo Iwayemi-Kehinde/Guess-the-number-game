@@ -51,6 +51,7 @@ function guessNum() {
       loose.textContent = `LOOSES: ${looseCount}`
     }
   }
+  input.textContent = ""
 }
 
 
