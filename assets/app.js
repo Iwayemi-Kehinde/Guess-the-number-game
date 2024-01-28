@@ -56,7 +56,7 @@ function guessNum() {
 
 guess.addEventListener("click", () => {
   guessNum()
-    input.textContent = ""
+    document.querySelector("p").textContent = ""
 })
 
 document.addEventListener("keyup", (e) => {
