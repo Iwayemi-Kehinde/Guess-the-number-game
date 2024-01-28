@@ -39,6 +39,7 @@ function guessNum() {
   }
   if (input.value.trim() && input.value.trim() <= 10) {
     guess.textContent = "Guess Again"
+    input.textContent = ""
     const randomNumber = Math.floor((Math.random() * 10) + 1)
     element.textContent = `You picked ${parseInt(input.value)}, Computer picked ${randomNumber}`
     if (randomNumber === parseInt(input.value)) {
@@ -51,7 +52,6 @@ function guessNum() {
       loose.textContent = `LOOSES: ${looseCount}`
     }
   }
-  input.textContent = ""
 }
 
 
