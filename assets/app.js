@@ -32,7 +32,7 @@ function guessNum() {
     playAgain.classList.add("Visible")
     return
   }
-  if (isNaN(input.value)) {
+  if (isNaN(input.value) || input.value > 10) {
     window.alert("PLEASE INPUT A NUMERIC VALUE BETWEEN 0 AND 10")
     input.value = ""
     return
